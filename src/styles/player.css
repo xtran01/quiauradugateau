@@ -1,0 +1,26 @@
+/* Optimisé mobile â€” touch targets 48px minimum */
+.waiting-room, .question-display, .qr-scanner, .join-container, .answer-confirm {
+  min-height: 100dvh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 24px; text-align: center; gap: 16px;
+}
+
+.waiting-msg { color: #6b7280; }
+
+.question-text { font-size: 1.3rem; font-weight: 600; margin-bottom: 16px; }
+
+.free-text textarea { min-height: 80px; font-size: 1rem; }
+.free-text button { width: 100%; min-height: 48px; font-size: 1.1rem; }
+
+.mcq-answer { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.mcq-btn { min-height: 64px; font-size: 1rem; border-radius: 12px; }
+.mcq-a { background: #ef4444; }
+.mcq-b { background: #3b82f6; }
+.mcq-c { background: #22c55e; }
+.mcq-d { background: #f59e0b; }
+.mcq-btn.selected { opacity: 0.6; }
+
+.check-icon { font-size: 4rem; color: #22c55e; }
+.confirm-timer { color: #6b7280; }
+
+.player-wait { text-align: center; padding: 40px; color: #6b7280; font-size: 1.2rem; }
