@@ -1,5 +1,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+:root {
+  --color-cake-cream: #F9EDD7;
+  --color-cake-cream-dark: #E8D0B0;
+  --color-rose-light: #F5B8C4;
+  --color-rose-main: #E8809A;
+  --color-strawberry: #C0334D;
+  --color-strawberry-dark: #8B1A2F;
+  --color-leaf: #4A7C4E;
+  --color-leaf-light: #7DB87F;
+  --color-white: #FFFFFF;
+  --color-outline: #3D1A10;
+}
+
 body {
   font-family: system-ui, sans-serif;
   background: #f5f5f5;
@@ -39,4 +52,81 @@ input, textarea, select {
 @keyframes pulse {
   0%,100% { transform: scale(1); opacity: 1; }
   50%      { transform: scale(1.5); opacity: 0.5; }
+}
+
+/* Home page styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-cake-cream) 0%, var(--color-rose-light) 100%);
+  color: var(--color-strawberry-dark);
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.home-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.home-main {
+  max-width: 600px;
+  width: 100%;
+}
+
+.home-image {
+  position: relative;
+  display: inline-block;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-description p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.home-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-actions button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background: var(--color-strawberry);
+  color: var(--color-white);
+  border: 2px solid var(--color-strawberry-dark);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-actions button:hover {
+  background: var(--color-strawberry-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
