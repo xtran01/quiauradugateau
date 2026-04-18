@@ -41,6 +41,9 @@ export default function Home() {
           <button onClick={() => navigate("/join")}>
             Rejoindre une session (Joueur)
           </button>
+          <button onClick={() => navigate("/join")}>
+            Gestion (Admin)
+          </button>
         </div>
       </main>
     </div>
